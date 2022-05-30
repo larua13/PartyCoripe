@@ -64,7 +64,14 @@ function telepatia(){
     })
 }
 
-function telepatia(){
+function dibujar(){
+    Swal.fire({
+        title: dibujos[Math.floor(Math.random()*dibujos.length)],
+        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
+      })
+  }
+
+function tararear(){
     let cancion = [Math.floor(Math.random()*canciones.length)]
     Swal.fire({
         title: canciones[cancion],
