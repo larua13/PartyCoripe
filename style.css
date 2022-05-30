@@ -1,0 +1,16 @@
+*{
+    max-width: 780px;
+}
+
+.container{
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.mimica{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
