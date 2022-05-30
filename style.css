@@ -3,8 +3,8 @@
 }
 
 .container{
-    width:auto;
-    height: auto;
+    width:100vh;
+    height:100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
