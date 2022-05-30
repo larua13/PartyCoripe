@@ -7,12 +7,18 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    box-shadow: 3px 2px 2px  #000000;
+}
+
+.container > div {
+    border: 10px rgb(0, 0, 0) solid; 
 }
 
 .mimica{
     background-color: blue;
     color: white;
     text-align: center;
+    
 }
 
 .telepatia{
