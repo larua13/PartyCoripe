@@ -27,7 +27,6 @@ html, body{
     background-repeat: no-repeat;
     color: white;
     text-align: center;
-    margin: 15px;
 }
 
 .telepatia{
@@ -48,6 +47,10 @@ html, body{
     text-align: center;
     background-size:cover;
     background-repeat: no-repeat;
+}
+
+img{
+    padding: 15px;
 }
 
 
