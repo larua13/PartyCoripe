@@ -22,7 +22,9 @@ html, body{
 }
 
 .mimica{
-    background-color: blue;
+    background: url(files/fondoMimica.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
     color: white;
     text-align: center;
 }
@@ -40,7 +42,13 @@ html, body{
 }
 
 .tararear{
-    background-color: rgb(234, 21, 131);
+    background: url(files/fondo.jpg);
     color: white;
     text-align: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+img{
+    padding: 10%;
 }
