@@ -45,14 +45,14 @@ html, body{
 #mimica{
     background: url(files/corazon.png);
     background-repeat: repeat;
-    background-size: 95%;
+    background-size: 80%;
     opacity: 98%;
 }
 
 #telepatia{
     background: url(files/telepatiafondos.png);
     background-repeat: repeat;
-    background-size: 95%;
+    background-size: 80%;
     opacity: 98%;
 }
 
