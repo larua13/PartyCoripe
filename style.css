@@ -29,7 +29,9 @@ html, body{
 }
 
 .white{
-    background-color: white;
+    background: url(files/corazon.png);
+    background-repeat: repeat;
+    background-size: 40px;
     padding: 2px;
     line-height: 0px;   
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.989);
