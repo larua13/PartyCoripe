@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+
 html, body{
     max-width: 780px;
     width: 100%;
@@ -19,34 +22,46 @@ html, body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: black;
+    text-align: center;
+    background-size:cover; 
+    background-repeat: no-repeat;
+}
+
+.white{
+    background-color: white;
+    padding: 20px 50px;
+    line-height: 20px;
+    
+}
+
+h1{
+    font-family: 'Mansalva', cursive;
+    font-size: 50px;
+    line-height: 50px;
 }
 
 .mimica{
     background: url(files/fondoMimica.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
 }
 
 .telepatia{
-    background-color: yellow;
-    color: white;
-    text-align: center;
+    background:url(files/flores.jpg);
 }
 
 .dibujar{
     background-color: green;
-    color: white;
-    text-align: center;
+ 
 }
 
 .tararear{
     background: url(files/fondo.jpg);
-    color: white;
-    text-align: center;
-    background-size:cover;
-    background-repeat: no-repeat;
+}
+
+h2{
+    font-family: 'Gamja Flower', cursive;
+    font-size: xx-large;
+    color:grey;
 }
 
 
