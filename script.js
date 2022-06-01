@@ -44,7 +44,7 @@ var canciones = ['Zapatillas, El canto de el loco', 'Nada que perder, Pignoise',
     'Tiroteo, Marc Seguí', 'Mmmh, KAI', 'I want it that way, Backstreets Boys', 'Suerte, Shakira', 'Opa, yo viacé un corrá, El Koala', 'Hola mi bebebé, WRS', 'Todo de ti, Rawl Alejandro', 'Malamente, Rosalía', 'Tú me dejaste de querer, C Tangana', 
     'Millones, Camilo', 'Me rehúso, Danny Ocean', 'Terriblemente Cruel, Leiva', 'Dónde está mi Nata, Nolabi', 'Danza Kuduro, Don Omar', 'Dont start now, Dua Lipa', 'Propuesta Indecente, Romeo Santos', 'Días de verano, Amaral', 'The Lazy Song, Bruno Mars', 
     'Ram pam pam, Natti Natasha feat. Becky G', 'Alejandro, Lady Gaga', 'Tusa, Karol G feat. Nicki Minaj', 'bad guy, Billie Ellish','EVERYDAY, WINNER', 'Toxic, Britney Spears', 'Llamado de emergencia, Daddy Yankee', 'La casa por el tejado, Fito y Fitipaldis',
-    'Mala mujer, C. Tangana', 'Aserejé, Las Ketchup', 'Veneno pa tu piel, La Veneno', 'Si veo a tu mamá, Bad Bunny', 'Last Day on Earth, Tai Verdes', 'Ibas sola, Juanmi', '20 de abril, Celtas Cortos', 'Sarandonga, Lolita Flores', 'Sin pijama, Natti Nattasha feat. Becky G']
+    'Mala mujer, C. Tangana', 'Aserejé, Las Ketchup', 'Antes muerta que sencilla, María Isabel', 'Veneno pa tu piel, La Veneno', 'Si veo a tu mamá, Bad Bunny', 'Last Day on Earth, Tai Verdes', 'Ibas sola, Juanmi', '20 de abril, Celtas Cortos', 'Sarandonga, Lolita Flores', 'Sin pijama, Natti Nattasha feat. Becky G']
 
 var spoty = ['"https://open.spotify.com/embed/track/42VgiRyg0YjtRVLiPFNxPJ?utm_source=generator"', /*Zapatillas*/
 '"https://open.spotify.com/embed/track/0YSaKC66FGCWLxM9SoQA1f?utm_source=generator"', /*Nada q */
@@ -66,7 +66,7 @@ var spoty = ['"https://open.spotify.com/embed/track/42VgiRyg0YjtRVLiPFNxPJ?utm_s
 '"https://open.spotify.com/embed/track/4Y6cDd4EPHcEbiUKdyvNwM?utm_source=generator"', /*la macarena*/
 '"https://open.spotify.com/embed/track/2DNyZP4Py6f4zMASLBnIu6?utm_source=generator"',/*la playa*/
 '"https://open.spotify.com/embed/track/4JOsL8WntMIwDeNQlKAwdA?utm_source=generator"', /*me colé*/
-'"https://open.spotify.com/embed/track/4MXMBfAnTSGwiGvs61l2tg?utm_source=generator"',/*1+1*/
+'"https://open.spotify.com/embed/track/3Af6XfS90PAZaC4Q2AjPtg?utm_source=generator"',/*1+1*/
 '"https://open.spotify.com/embed/track/0wQCKR9OFjYu5Kzrk7WivJ?utm_source=generator"',//Corazon partio
 '"https://open.spotify.com/embed/track/2LsbizbOeNa4x6qsi2jAMb?utm_source=generator"', /*La flaca*/
 '"https://open.spotify.com/embed/track/4nTduFjaTmGysc9WKNuCcs?utm_source=generator"', /*vida de rico*/
