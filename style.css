@@ -88,6 +88,10 @@ html, body{
     background:url(files/fondo.jpg);     
 }
 
+#imita > h1{
+    line-height: 35px;
+}
+
 .white > h2{
     font-family: 'Gamja Flower', cursive;
     font-size: xx-large;
@@ -95,7 +99,7 @@ html, body{
 }
 
 #imita > h2{
-    line-height: 30px;
+    line-height: 20px;
 }
 
 
