@@ -71,20 +71,20 @@ html, body{
 }
 
 .mimica{
-    background: url(files/fondo.jpg);
+    background: url(files/flores.jpg);
 }
 
 .tararear{
-    background:url(files/amarillo.png);
+    background:url(files/flores5.jpg);
 }
 
 .dibujar{
-    background:url(files/verde.png);
+    background:url(files/flores2.jpg);
  
 }
 
 .telepatia{
-    background: url(files/azul.png);
+    background: url(files/olas.jpg);
 }
 
 .white > h2{
