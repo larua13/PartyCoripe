@@ -24,8 +24,8 @@ html, body{
     justify-content: center;
     color: black;
     text-align: center;
-    background-size:cover; 
-    background-repeat: no-repeat;
+    background-size: 100%;
+    background-repeat: repeat;
 }
 
 .white{
@@ -71,21 +71,20 @@ html, body{
 }
 
 .mimica{
-    background: url(files/flores.jpg);
+    background: url(files/patron2.png);
 }
 
 .tararear{
-    background:url(files/flores2.jpg);
+    background:url(files/patron3.png);
 }
 
 .dibujar{
-    background:url(files/flores5.jpg);
-    
+    background:url(files/patron.png);     
  
 }
 
 .telepatia{
-    background: url(files/olas.jpg);
+    background: url(files/patron4.png);
 }
 
 .white > h2{
