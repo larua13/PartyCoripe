@@ -11,12 +11,41 @@ html, body{
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mimica  telepatia"
+                            "korea"
+                         "dibujar tararear";
+   
     box-shadow: 3px 2px 2px  #000000;
     grid-gap: 3px; 
     background-color: black;
     border: 2px solid black;
+}
+
+.container .mimica {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+}
+
+.container .telepatia {
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+}
+
+
+.container .dibujar {
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+}
+
+.container .tararear {
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+}
+
+.container .korea {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
 }
 
 .container > div {
@@ -102,14 +131,9 @@ html, body{
 }
 
 #imita > h2{
-    line-height: 20px;
+    line-height: 18px;
 }
 
-.korea {
-    position: absolute;
-    top: 20%; 
-    left: 34%;
-}
 
 
 
