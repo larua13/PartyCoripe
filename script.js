@@ -147,53 +147,9 @@ function mimica(){
         mimica = Math.floor(Math.random()*mimicas.length);
     }
 
-    let timerInterval;
+    ventana(mimicas, mimica);
 
-    Swal.fire({    
-        title: mimicas[mimica],
-        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
-        html:'<strong color: red></strong><br/><br/>' +
-        '<button id="increase" class="btn btn-warning">' +
-        'I need 5 more seconds!' +
-        '</button><br/><br/>' +
-        '<button id="stop" class="btn btn-danger">' +
-        'Please stop the timer!!' +
-        '</button><br/><br/>',    
-        timer: 30000,
-    didOpen: () => {
-        const content = Swal.getHtmlContainer()
-        const $ = content.querySelector.bind(content)
-
-        const stop = $('#stop') 
-        const increase = $('#increase')
-
-        Swal.showLoading()
-
-        function toggleButtons () {
-        stop.disabled = !Swal.isTimerRunning()       
-        }
-
-        stop.addEventListener('click', () => {
-        Swal.stopTimer()
-        toggleButtons()
-        })  
-
-        increase.addEventListener('click', () => {
-        Swal.increaseTimer(5000)
-        })
-
-        timerInterval = setInterval(() => {
-        Swal.getHtmlContainer().querySelector('strong')
-            .textContent = (Swal.getTimerLeft() / 1000)
-            .toFixed(0)
-        }, 100)
-    },
-    willClose: () => {
-        clearInterval(timerInterval)
-    }
-            
-    })
-
+    
     mimicaHecha.push(mimica);
     console.log("Mimica: " + mimicas.length + "telepatía: " + telepatias.length + "dibujo: " + dibujos.length + 'canciones: ' + canciones.length + " imitaciones: " + imitar.length);
 }
@@ -209,10 +165,7 @@ function telepatia(){
         telepatia = Math.floor(Math.random()*telepatias.length);
     }
 
-  Swal.fire({
-      title: telepatias[telepatia],
-      confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
-    })
+    ventana(telepatias, telepatia);
 
     telepatiaHecha.push(telepatia);
 }
@@ -227,10 +180,8 @@ function dibujar(){
     while (!comprobar(dibuja, dibujarHecho)){
         dibuja = Math.floor(Math.random()*dibujos.length);
     }
-    Swal.fire({
-        title: dibujos[dibuja],
-        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
-      })
+    
+    ventana(dibujos, dibuja);
 
       dibujarHecho.push(dibuja);
   }
@@ -239,7 +190,6 @@ function tararear(){
 
     let imitaOtararea = Math.random() < 0.5; 
     
-
     if (imitaOtararea){
         let cancion = Math.floor(Math.random()*canciones.length);
 
@@ -250,12 +200,8 @@ function tararear(){
         while (!comprobar(cancion, tarareoHecho)){
             cancion = Math.floor(Math.random()*canciones.length);
         }
-    
-        Swal.fire({
-            title: canciones[cancion],
-            confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
-            html: '<iframe style="border-radius:12px" src=' + spoty[cancion] + ' width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>' 
-          })
+
+        ventana2(canciones, cancion, '<iframe style="border-radius:12px" src=' + spoty[cancion] + ' width="100%" height="380" frameBorder="0" allowfullscreen="""></iframe>');
     
           tarareoHecho.push(cancion);
     }else{
@@ -270,16 +216,10 @@ function tararear(){
             imitacion = Math.floor(Math.random()*imitar.length);
         }
     
-        Swal.fire({
-            title: imitar[imitacion],
-            confirmButtonText: frases[Math.floor(Math.random()*frases.length)], 
-          })
+        ventana(imitar, imitacion);
     
-          imitaHecho.push(imitacion);
+        imitaHecho.push(imitacion);
     }
-
-
-
     
   }
 
@@ -297,11 +237,84 @@ function comprobar(elemento, hecho){
 }
 
 
-function myFunction() {
-    var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
+  function ventana(categoria, i){
+
+    let timerInterval; 
+
+    Swal.fire({      
+        title: categoria[i],
+        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
+        html: '<strong></strong><br/><br/>' +        
+        '</button><br/><br/>' +
+        '<button id="stop" class="btn btn-danger">' +
+        'Please stop the timer!!' +
+        '</button><br/><br/>',
+        timer: 30000,
+    didOpen: () => {
+        const content = Swal.getHtmlContainer()
+        const $ = content.querySelector.bind(content)
+
+        const stop = $('#stop') 
+
+        Swal.showLoading()
+
+        stop.addEventListener('click', () => {
+        Swal.stopTimer()
+        Swal.close();
+        })  
+
+        timerInterval = setInterval(() => {
+        Swal.getHtmlContainer().querySelector('strong')
+            .textContent = (Swal.getTimerLeft() / 1000)
+            .toFixed(0)
+        }, 100)
+    },
+    willClose: () => {
+        clearInterval(timerInterval);
     }
+            
+    })
+
+
+  }
+
+  function ventana2(categoria, i, cancion){
+
+    let timerInterval; 
+
+    Swal.fire({   
+        title: categoria[i],
+        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
+        html: cancion + '<strong></strong>' +
+        '</button><br/><br/>' +
+        '<button id="stop" class="btn btn-danger">' +
+        'Please stop the timer!!' +
+        '</button><br/><br/>',
+        timer: 30000,
+    didOpen: () => {
+        const content = Swal.getHtmlContainer()
+        const $ = content.querySelector.bind(content)
+
+        const stop = $('#stop') 
+
+        Swal.showLoading()
+
+        stop.addEventListener('click', () => {
+        Swal.stopTimer()
+        Swal.close();
+        })  
+
+        timerInterval = setInterval(() => {
+        Swal.getHtmlContainer().querySelector('strong')
+            .textContent = (Swal.getTimerLeft() / 1000)
+            .toFixed(0)
+        }, 100)
+    },
+    willClose: () => {
+        clearInterval(timerInterval);
+    }
+            
+    })
+
+
   }
