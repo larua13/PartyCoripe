@@ -18,29 +18,35 @@ html, body{
    
     box-shadow: 3px 2px 2px  #000000;
     grid-gap: 3px; 
-    background-color: black;
+    background:url(./files/back.jpg);
     border: 2px solid black;
 }
 
 .container .mimica {
-    grid-column-start: 1; 
-    grid-column-end: 3; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
 
 .container .telepatia {
-    grid-column-start: 4; 
-    grid-column-end: 6; 
+    grid-column-start: 3;
+    grid-column-end: 6;
 }
 
 
 .container .dibujar {
-    grid-column-start: 1; 
-    grid-column-end: 3; 
+    grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 3;
+grid-row-end: 6;
 }
 
 .container .tararear {
-    grid-column-start: 4; 
-    grid-column-end: 6; 
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
 }
 
 .container .korea {
