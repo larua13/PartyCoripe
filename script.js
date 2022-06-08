@@ -147,10 +147,51 @@ function mimica(){
         mimica = Math.floor(Math.random()*mimicas.length);
     }
 
-    Swal.fire({
+    let timerInterval;
+
+    Swal.fire({    
         title: mimicas[mimica],
-        confirmButtonText: frases[Math.floor(Math.random()*frases.length)]
-        
+        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
+        html:'<strong color: red></strong><br/><br/>' +
+        '<button id="increase" class="btn btn-warning">' +
+        'I need 5 more seconds!' +
+        '</button><br/><br/>' +
+        '<button id="stop" class="btn btn-danger">' +
+        'Please stop the timer!!' +
+        '</button><br/><br/>',    
+        timer: 30000,
+    didOpen: () => {
+        const content = Swal.getHtmlContainer()
+        const $ = content.querySelector.bind(content)
+
+        const stop = $('#stop') 
+        const increase = $('#increase')
+
+        Swal.showLoading()
+
+        function toggleButtons () {
+        stop.disabled = !Swal.isTimerRunning()       
+        }
+
+        stop.addEventListener('click', () => {
+        Swal.stopTimer()
+        toggleButtons()
+        })  
+
+        increase.addEventListener('click', () => {
+        Swal.increaseTimer(5000)
+        })
+
+        timerInterval = setInterval(() => {
+        Swal.getHtmlContainer().querySelector('strong')
+            .textContent = (Swal.getTimerLeft() / 1000)
+            .toFixed(0)
+        }, 100)
+    },
+    willClose: () => {
+        clearInterval(timerInterval)
+    }
+            
     })
 
     mimicaHecha.push(mimica);
