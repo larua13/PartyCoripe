@@ -12,13 +12,23 @@ html, body{
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "mimica  telepatia"
+    grid-template-areas:   "header" 
+                        "mimica  telepatia"
                          "dibujar tararear";
    
     box-shadow: 3px 2px 2px  #000000;
-    grid-gap: 3px; 
-    background-color: black;
+    background: url(./files/back.jpg);
     border: 2px solid black;
+}
+.container .header{
+    grid-column-start: 1;
+    grid-column-end:3;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 .container .mimica {
