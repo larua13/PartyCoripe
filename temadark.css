@@ -1446,6 +1446,6 @@
   }
 
   .start:hover {
-    background-color: #ff5100;
-    color: black; 
+    background-color: #000000;
+    color: #ff5100; 
   }
