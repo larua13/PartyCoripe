@@ -8,8 +8,12 @@ html, body{
     overflow: hidden;
 }
 
-.container{
+.supercontainer{
     height: 100vh;
+}
+
+.container{
+    height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "mimica  telepatia"
@@ -50,7 +54,6 @@ grid-row-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
 
 .container > div {
     width: 100%;
@@ -139,17 +142,10 @@ grid-row-end: 3;
 }
 
 .final{
-    width: auto;
-    display: inline-block; 
-    position: relative;
+    display: flex; 
     text-align: center;
-    background-color: #000000;
-}
-
-.final img{
-    width: 20%;
-
-}
+    justify-content: center;
+background-color: #000000;}
 
 
 
