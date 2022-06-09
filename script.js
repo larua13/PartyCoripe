@@ -242,40 +242,62 @@ function comprobar(elemento, hecho){
 
     let timerInterval; 
 
+    
     Swal.fire({      
         title: categoria[i],
         html: '<strong></strong><br/>' +        
         '</button><br/>' +
-        '<button id="start" class = "start">' + frases[Math.floor(Math.random()*frases.length)] + '</button></br>',
+        '<div class = "flex"><button id="start" class = "start">' + frases[Math.floor(Math.random()*frases.length)] + '</button>' +
+        '<button id = "salir" class = "salir"><i class = "material-icons">stop</i></button></div>',
         showCancelButton: false, 
         showConfirmButton: false,
         timer: 30000,
+        allowOutsideClick: false,
+
+        
     didOpen: () => {
+
+        let audplay = new Audio(sergio);
         
         swal.stopTimer()        
         const content = Swal.getHtmlContainer()
         const $ = content.querySelector.bind(content)
         const start = $('#start')
+        const salir = $('#salir')
         
         start.addEventListener('click', () => {
             Swal.resumeTimer()   
-            var audplay = new Audio(sergio)
-            audplay.play();      
+            audio(audplay, 1);   
         })
+
+        salir.addEventListener('click', () =>{
+            audio(audplay, 0);
+            Swal.close();
+        } )
 
         timerInterval = setInterval(() => {
         Swal.getHtmlContainer().querySelector('strong')
             .textContent = (Swal.getTimerLeft() / 1000)
             .toFixed(0)
-        }, 100)
+        }, 100)        
+        
     },
-    willClose: () => {
+    willClose: () => {            
         clearInterval(timerInterval);
     },      
     })
+}
 
+function audio(audplay, boleana){
+    if (boleana == true){        
+        audplay.play();
+    }else{
+        audplay.pause();
+    }
+    
+    
+}
 
-  }
 
   function ventana2(categoria, i, cancion){
 

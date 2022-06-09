@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 *{
     font-family:'Mansalva', cursive;
+    overflow:hidden; 
 
 }
 
@@ -1417,16 +1418,20 @@
   .salir{
     background-color: red;
     border-radius: 50px;
-    width: 40px;
-    height: 40px;
-   box-shadow:  2px 2px  #000000;
-   margin-top: 10px;
-   margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    box-shadow:  2px 2px  #000000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin-left: 10px;
+    
   }
 
-  .salir{
-    color: white; 
-    padding: 0; 
+  .salir i{
+    color: white;
+
   }
 
   strong{
@@ -1448,4 +1453,11 @@
   .start:hover {
     background-color: #000000;
     color: #ff5100; 
+  }
+
+  .flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
   }
