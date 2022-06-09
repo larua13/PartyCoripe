@@ -41,7 +41,7 @@ var imitar = ['Acento: argentino', 'Acento: cubano', 'Acento: vasco', 'Acento: a
     'Imitación: Boris Izaguirre', 'Imitación: Jack Sparrow', 'Imitación: Rafa Nadal', 'Imitación: BTS', 'Imitación: la muñeca del Juego del Calamar', 'Imitación: Er juan y el Migué', 'Imitación: Ed Sheeran', 
     'Imitación: Bruno Mars', 'Imitación: la Rosalía', 'Imitación: Fernando Simón', 'Imitación: Sergio Peinado', 'Imitación: Patry Jordan', 'Imitación: Dark Vather', 'Imitación: Pablo Escobar', 'Acento: gitano']
 
-var canciones = ['Zapatillas, El canto de el loco', 'Nada que perder, Pignoise', 'Cuando zarpa el amor, Camela', 'Como Camarón, Estopa', 'Por la raja de tu falda, Estopa', 
+var canciones = ['Zapatillas, El canto del loco', 'Nada que perder, Pignoise', 'Cuando zarpa el amor, Camela', 'Como Camarón, Estopa', 'Por la raja de tu falda, Estopa', 
     'Caminando por la vida, Melendi', 'Tacones Rojos, Sebastián Yatra',  'Perfect, Ed Sheeran', 'Shape of you, Ed Sheeran', 'Talking to the moon, Bruno Mars', 'Física o química, Despistaos', 
     'El universo sobre mí, Amaral', 'El himno del Sevilla, El Arrebato', 'Princesas, Pereza', 'Sevilla tiene un color especial, Los del Río', 'Money, money, money, BTS', 'Nunca volverá, El sueño de Morfeo', 
     'La Macarena, Los del Río', 'La Playa, La Oreja de Van Gogh', 'Me colé en una fiesta, Mecano', '1+1 son 7, Fran Perea', 'Corazón partío, Alejandro Sanz', 'La Flaca, Jarabe de Palo', 'Vida de Rico, Camilo', 'Mi estrella Blanca, Fondo Flamenco', 
@@ -243,19 +243,17 @@ function comprobar(elemento, hecho){
 
     Swal.fire({      
         title: categoria[i],
-        html: '<strong></strong><br/><br/>' +        
-        '</button><br/><br/>' +
-        '<button id="stop" class="btn btn-danger">' +
-        'Please stop the timer!!' +
-        '</button><br/><br/>',
+        html: '<strong></strong><br/>' +        
+        '</button><br/>' +
+        '<button id="stop" class="salir"><i class = "material-icons">stop</i>' +
+        '</button>',
+        showConfirmButton: false, 
         timer: 30000,
     didOpen: () => {
         const content = Swal.getHtmlContainer()
         const $ = content.querySelector.bind(content)
 
-        const stop = $('#stop') 
-
-        Swal.showLoading()
+        const stop = $('#stop')
 
         stop.addEventListener('click', () => {
         Swal.stopTimer()
