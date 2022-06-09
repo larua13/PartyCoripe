@@ -276,6 +276,7 @@
     width: 32em;
     max-width: 100%;
     padding: 0 0 1.25em;
+    box-shadow: 3px 2px 4px  #000000;
     border: none;
     border-radius: 5px;
     background: url(./files/back.jpg);
@@ -1414,16 +1415,37 @@
   }
 
   .salir{
-    background-color: white;
+    background-color: red;
     border-radius: 50px;
     width: 40px;
     height: 40px;
+   box-shadow:  2px 2px  #000000;
+   margin-top: 10px;
+   margin-bottom: 10px;
   }
 
-  .salir i{
-    color: red; 
+  .salir{
+    color: white; 
+    padding: 0; 
   }
 
   strong{
     color: red; 
+    font-size: x-large;
+  }
+
+  .start {
+    border: 2px black;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #ff5100;
+    color: white;
+    font-size: 1em;
+    box-shadow: 0px 0px 5px 3px rgba(243, 119, 4, 0.5);
+  
+  }
+
+  .start:hover {
+    background-color: #ff5100;
+    color: black; 
   }

@@ -245,20 +245,19 @@ function comprobar(elemento, hecho){
         title: categoria[i],
         html: '<strong></strong><br/>' +        
         '</button><br/>' +
-        '<button id="stop" class="salir"><i class = "material-icons">stop</i>' +
-        '</button>',
-        showConfirmButton: false, 
+        '<button id="start" class = "start">' + frases[Math.floor(Math.random()*frases.length)] + '</button></br>',
+        showCancelButton: false, 
+        showConfirmButton: false,
         timer: 30000,
     didOpen: () => {
+        swal.stopTimer()        
         const content = Swal.getHtmlContainer()
         const $ = content.querySelector.bind(content)
-
-        const stop = $('#stop')
-
-        stop.addEventListener('click', () => {
-        Swal.stopTimer()
-        Swal.close();
-        })  
+        const start = $('#start')
+        
+        start.addEventListener('click', () => {
+            Swal.resumeTimer()      
+        })
 
         timerInterval = setInterval(() => {
         Swal.getHtmlContainer().querySelector('strong')
@@ -268,8 +267,7 @@ function comprobar(elemento, hecho){
     },
     willClose: () => {
         clearInterval(timerInterval);
-    }
-            
+    },      
     })
 
 
@@ -281,24 +279,20 @@ function comprobar(elemento, hecho){
 
     Swal.fire({   
         title: categoria[i],
-        html: cancion + '<strong></strong>' +
-        '</button><br/><br/>' +
-        '<button id="stop" class="salir"><i class = "material-icons">stop</i>' +
-        '</button><br/><br/>',
+        html: cancion + '<strong></strong><br/>' +        
+        '<button id="start" class = "start">' + frases[Math.floor(Math.random()*frases.length)] + '</button></br>',
+        showCancelButton: false, 
+        showConfirmButton: false,
         timer: 30000,
     didOpen: () => {
+        swal.stopTimer()        
         const content = Swal.getHtmlContainer()
         const $ = content.querySelector.bind(content)
-
-        const stop = $('#stop') 
-
-        Swal.showLoading()
+        const start = $('#start')
         
-
-        stop.addEventListener('click', () => {
-        Swal.stopTimer()
-        Swal.close();
-        })  
+        start.addEventListener('click', () => {
+            Swal.resumeTimer()      
+        })
 
         timerInterval = setInterval(() => {
         Swal.getHtmlContainer().querySelector('strong')
@@ -308,7 +302,7 @@ function comprobar(elemento, hecho){
     },
     willClose: () => {
         clearInterval(timerInterval);
-    }
+    },      
             
     })
 
