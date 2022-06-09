@@ -224,6 +224,78 @@ function tararear(){
     
   }
 
+  function final(){
+    let mimica = Math.floor(Math.random()*mimicas.length);
+    
+    if (mimicaHecha.length === mimicas.length){
+        mimicaHecha = []; 
+    }
+
+    while (!comprobar(mimica, mimicaHecha)){
+        mimica = Math.floor(Math.random()*mimicas.length);
+    }
+    
+    mimicaHecha.push(mimica);
+    console.log("Mimica: " + mimicas.length + "telepatía: " + telepatias.length + "dibujo: " + dibujos.length + 'canciones: ' + canciones.length + " imitaciones: " + imitar.length);
+    
+    let telepatia = Math.floor(Math.random()*telepatias.length);
+
+    if (telepatiaHecha.length === telepatias.length){
+        telepatiaHecha = []; 
+    }
+
+    while (!comprobar(telepatia, telepatiaHecha)){
+        telepatia = Math.floor(Math.random()*telepatias.length);
+    }
+
+    telepatiaHecha.push(telepatia);
+
+    let dibuja = Math.floor(Math.random()*dibujos.length);
+
+    if (dibujarHecho.length === dibujos.length){
+        dibujarHecho = []; 
+    }
+
+    while (!comprobar(dibuja, dibujarHecho)){
+        dibuja = Math.floor(Math.random()*dibujos.length);
+    }
+
+      dibujarHecho.push(dibuja);
+
+      let imitaOtararea = Math.random() < 0.5; 
+    
+      if (imitaOtararea){
+          let cancion = Math.floor(Math.random()*canciones.length);
+  
+          if (tarareoHecho.length === canciones.length){
+              tarareoHecho = []; 
+          }
+          
+          while (!comprobar(cancion, tarareoHecho)){
+              cancion = Math.floor(Math.random()*canciones.length);
+          }
+  
+          ventanaFinal(mimicas, mimica, telepatias, telepatia, dibujos, dibuja, canciones, cancion);
+      
+          tarareoHecho.push(cancion);
+      }else{
+  
+          let imitacion = Math.floor(Math.random()*imitar.length);
+  
+          if (imitaHecho.length === imitar.length){
+              imitaHecho = []; 
+          }
+          
+          while (!comprobar(imitacion, imitaHecho)){
+              imitacion = Math.floor(Math.random()*imitar.length);
+          }
+      
+          imitaHecho.push(imitacion);
+
+          ventanaFinal(mimicas, mimica, telepatias, telepatia, dibujos, dibuja, imitar, imitacion);
+        }     
+}
+
 function comprobar(elemento, hecho){
     let booleano = true; 
     
@@ -236,8 +308,6 @@ function comprobar(elemento, hecho){
 
     return booleano; 
 }
-
-
   function ventana(categoria, i){
 
     let timerInterval; 
@@ -294,12 +364,9 @@ function audio(audplay, boleana){
     }else{
         audplay.pause();
     }
-    
-    
 }
 
-
-  function ventana2(categoria, i, cancion){
+function ventana2(categoria, i, cancion){
 
     let timerInterval; 
 
@@ -335,6 +402,58 @@ function audio(audplay, boleana){
     },      
             
     })
-
-
   }
+
+
+  function ventanaFinal(categoria, i, categoria2, i2, categoria3, i3, categoria4, i4){
+
+    let timerInterval; 
+    
+    Swal.fire({      
+        title: '<span class = "categoria1">MÍMICA:</span></br>' + categoria[i] + 
+        '</br><span class = "categoria2"></br>TELEPATÍA:</span></br> ' + categoria2[i2] + 
+        '</br><span class = "categoria3"></br>DIBUJA: </span></br>' + categoria3[i3] + 
+        '</br><span class = "categoria4"></br>IMITA O TARAREA:</span></br> ' + categoria4[i4],
+        html: '<strong></strong><br/>' +        
+        '</button><br/>' +
+        '<div class = "flex"><button id="start" class = "start">' + frases[Math.floor(Math.random()*frases.length)] + '</button>' +
+        '<button id = "salir" class = "salir"><i class = "material-icons">stop</i></button></div>',
+        showCancelButton: false, 
+        showConfirmButton: false,
+        timer: 90000,
+        allowOutsideClick: false,
+
+    didOpen: () => {
+
+        let audplay = new Audio(sergio);
+        
+        swal.stopTimer()        
+        const content = Swal.getHtmlContainer()
+        const $ = content.querySelector.bind(content)
+        const start = $('#start')
+        const salir = $('#salir')
+        
+        start.addEventListener('click', () => {
+            Swal.resumeTimer()   
+            audio(audplay, 1);   
+        })
+
+        salir.addEventListener('click', () =>{
+            audio(audplay, 0);
+            Swal.close();
+        } )
+
+        timerInterval = setInterval(() => {
+        Swal.getHtmlContainer().querySelector('strong')
+            .textContent = (Swal.getTimerLeft() / 1000)
+            .toFixed(0)
+        }, 100)        
+        
+    },
+    willClose: () => {            
+        clearInterval(timerInterval);
+    },      
+    })
+}
+
+
