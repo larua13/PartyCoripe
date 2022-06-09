@@ -134,6 +134,7 @@ var mimicaHecha = [];
 var telepatiaHecha = []; 
 var dibujarHecho = []; 
 var imitaHecho = [];
+var sergio = "files/sergio.wav";
 
 function mimica(){
 
@@ -250,6 +251,7 @@ function comprobar(elemento, hecho){
         showConfirmButton: false,
         timer: 30000,
     didOpen: () => {
+        
         swal.stopTimer()        
         const content = Swal.getHtmlContainer()
         const $ = content.querySelector.bind(content)
@@ -288,19 +290,23 @@ function comprobar(elemento, hecho){
         swal.stopTimer()        
         const content = Swal.getHtmlContainer()
         const $ = content.querySelector.bind(content)
-        const start = $('#start')
+        const start = $('#start')             
         
         start.addEventListener('click', () => {
-            Swal.resumeTimer()      
+            Swal.resumeTimer()   
+            var audplay = new Audio(sergio)
+             audplay.play();   
         })
 
-        timerInterval = setInterval(() => {
+        timerInterval = setInterval(() => {            
         Swal.getHtmlContainer().querySelector('strong')
             .textContent = (Swal.getTimerLeft() / 1000)
             .toFixed(0)
         }, 100)
+        
+        
     },
-    willClose: () => {
+    willClose: () => {   
         clearInterval(timerInterval);
     },      
             
