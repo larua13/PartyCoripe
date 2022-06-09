@@ -13,8 +13,7 @@ html, body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "mimica  telepatia"
-                         "dibujar tararear"
-                         "final";
+                         "dibujar tararear";
    
     box-shadow: 3px 2px 2px  #000000;
     background-color: black;
@@ -140,10 +139,18 @@ grid-row-end: 3;
 }
 
 .final{
-    grid-column-start: 1;
-    grid-column-end: 3;
+    width: auto;
+    display: inline-block; 
+    position: relative;
+    text-align: center;
+}
+
+.final img{
+    width: 20%;
 
 }
+
+
 
 
 
