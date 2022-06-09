@@ -1417,8 +1417,8 @@
   .salir{
     background-color: red;
     border-radius: 50px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     box-shadow:  2px 2px  #000000;
     text-align: center;
     align-items: center;
@@ -1429,7 +1429,9 @@
   }
 
   .salir i{
+    padding-top: 3px;
     color: white;
+    font-size: 30px;
 
   }
 
@@ -1446,6 +1448,8 @@
     color: white;
     font-size: 1em;
     box-shadow: 0px 0px 5px 3px rgba(243, 119, 4, 0.5);
+    font-size: large;
+    padding: 5px;
   
   }
 
