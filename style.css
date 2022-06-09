@@ -140,12 +140,12 @@ grid-row-end: 3;
 }
 
 .final{
-    width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
-    margin: 0; 
-    padding: 0;
+
 }
+
+
 
 
 
