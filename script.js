@@ -258,7 +258,9 @@ function comprobar(elemento, hecho){
         const start = $('#start')
         
         start.addEventListener('click', () => {
-            Swal.resumeTimer()      
+            Swal.resumeTimer()   
+            var audplay = new Audio(sergio)
+            audplay.play();      
         })
 
         timerInterval = setInterval(() => {
