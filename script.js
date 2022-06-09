@@ -243,7 +243,6 @@ function comprobar(elemento, hecho){
 
     Swal.fire({      
         title: categoria[i],
-        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
         html: '<strong></strong><br/><br/>' +        
         '</button><br/><br/>' +
         '<button id="stop" class="btn btn-danger">' +
@@ -284,11 +283,9 @@ function comprobar(elemento, hecho){
 
     Swal.fire({   
         title: categoria[i],
-        confirmButtonText: frases[Math.floor(Math.random()*frases.length)],
         html: cancion + '<strong></strong>' +
         '</button><br/><br/>' +
-        '<button id="stop" class="btn btn-danger">' +
-        'Please stop the timer!!' +
+        '<button id="stop" class="salir"><i class = "material-icons">stop</i>' +
         '</button><br/><br/>',
         timer: 30000,
     didOpen: () => {
@@ -298,6 +295,7 @@ function comprobar(elemento, hecho){
         const stop = $('#stop') 
 
         Swal.showLoading()
+        
 
         stop.addEventListener('click', () => {
         Swal.stopTimer()
