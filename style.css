@@ -143,6 +143,7 @@ grid-row-end: 3;
     display: inline-block; 
     position: relative;
     text-align: center;
+    background-color: #000000;
 }
 
 .final img{
