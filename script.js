@@ -135,6 +135,7 @@ var telepatiaHecha = [];
 var dibujarHecho = []; 
 var imitaHecho = [];
 var sergio = "files/sergio.wav";
+var sergio90 = "files/sergio90.wav";
 
 function mimica(){
 
@@ -425,7 +426,7 @@ function ventana2(categoria, i, cancion){
 
     didOpen: () => {
 
-        let audplay = new Audio(sergio);
+        let audplay = new Audio(sergio90);
         
         swal.stopTimer()        
         const content = Swal.getHtmlContainer()
