@@ -207,22 +207,24 @@ grid-row-end: 3;
     }
     
   }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
+
   
   @media (min-width: 481px) and (max-width: 767px) {
     
-    /* CSS */
+    .final img{
+        width: 20%;
+        max-width: 20%;
+    }
     
   }
   
   
   @media (min-width: 320px) and (max-width: 480px) {
     
-    /* CSS */
+    .final img{
+        width: 20%;
+        max-width: 20%;
+    }
     
   }
 
