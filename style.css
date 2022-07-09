@@ -1,4 +1,3 @@
-@import url('');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 html, body{
@@ -6,6 +5,7 @@ html, body{
     height: 100%;
     margin: 0 auto; 
     overflow: hidden;
+    font-family: 'Algerian';
 }
 
 .supercontainer{
