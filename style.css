@@ -121,8 +121,7 @@ grid-row-end: 3;
 }
 
 .mimica{
-    background-image: url(files/azulejos.jpg);    
-    width: auto;
+    background:url(files/azulejosMimica.jpg);  
 }
 
 .tararear{
@@ -130,12 +129,12 @@ grid-row-end: 3;
 }
 
 .dibujar{
-    background: url(files/azulejos3.jpg);
+    background-image: url(files/azulejos.jpg); 
     
 }
 
 .telepatia{
-    background:url(files/fondo.jpg);     
+    background:url(files/azulejos3.jpg);     
 }
 
 #imita > h1{
