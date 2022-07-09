@@ -94,7 +94,7 @@ grid-row-end: 3;
 #mimica{
     background: url(files/fondoMimica.jpg);
     background-repeat: no-repeat;
-    background-size: 130%;
+    background-size: cover;
     opacity: 98%;
 }
 
@@ -121,7 +121,9 @@ grid-row-end: 3;
 }
 
 .mimica{
-    background-color: #cd5c5c;
+    background-image: url(files/azulejos.jpg);
+    background-repeat: repeat;
+    background-size: auto;
 }
 
 .tararear{
