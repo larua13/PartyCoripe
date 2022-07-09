@@ -125,16 +125,16 @@ grid-row-end: 3;
 }
 
 .tararear{
-    background:url(files/azulejos2.jpg);
+    background:url(files/azulejosTararea.jpg);
 }
 
 .dibujar{
-    background-image: url(files/azulejos.jpg); 
+    background-image: url(files/azulejosDibuja.jpg); 
     
 }
 
 .telepatia{
-    background:url(files/azulejos3.jpg);     
+    background:url(files/azulejosTelepatia.jpg);     
 }
 
 #imita > h1{
