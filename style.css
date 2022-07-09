@@ -99,7 +99,7 @@ grid-row-end: 3;
 }
 
 #telepatia{
-    background: white;
+    background: url(files/fondoTelepatia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 98%;
@@ -107,14 +107,14 @@ grid-row-end: 3;
 }
 
 #dibuja{
-    background: url(files/dibujafondos.png);
+    background: url(files/fondoDibuja.jpg);
     background-repeat: repeat;
     background-size: 95%;
     opacity: 98%;
 }
 
 #imita{
-    background: url(files/imitafondos.png);
+    background: url(files/fondoImita.jpg);
     background-repeat: repeat;
     background-size: 95%;
     opacity: 98%;
