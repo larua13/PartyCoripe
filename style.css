@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@import url('');
 @import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
 
 html, body{
@@ -78,23 +78,25 @@ grid-row-end: 3;
 }
 
 .white > h1{
-    font-family: 'Mansalva', cursive;
+    font-family: 'Algerian';
     font-size: 50px;
     line-height: 50px;
+    padding: 20px;
 }
 
 #mimica{
-    background: url(files/corazon.png);
-    background-repeat: repeat;
-    background-size: 80%;
+    background: url(files/fondoMimica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 98%;
 }
 
 #telepatia{
-    background: url(files/telepatiafondos.png);
-    background-repeat: repeat;
-    background-size: 80%;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
     opacity: 98%;
+
 }
 
 #dibuja{
@@ -112,7 +114,7 @@ grid-row-end: 3;
 }
 
 .mimica{
-    background: url(files/flores5.jpg);
+    background-color: #cd5c5c;
 }
 
 .tararear{
