@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'Algerian';
+    src: url('files/Algerian\ Regular.ttf') format("truetype");
+    }
+    * {
+    font-family: 'AlgerianRegular';
+    font-size: 18px;
+    }
+
 html, body{
     width: 100%;
     height: 100%;
     margin: 0 auto; 
     overflow: hidden;
-    font-family: 'AlgerianRegular';
+    font-family: 'Algerian';
 }
 
 .supercontainer{
