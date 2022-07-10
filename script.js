@@ -8,7 +8,9 @@ var mimicas = ['Spiderman', 'Piratas del Caribe', 'Harry Potter', 'La casa de Pa
     'Los Sanfermines', 'Montar en bici', 'Tirarse de bomba a la piscina', 'Bailar un chotis', 'Ayuso en el balcón', 'Jugar a las palas en la playa', 'Chary y Mila comprando sandías', 
     'Victoria, Irene y Laura jugando al FIFA', 'La gymkhaja de los Reyes 2021', 'Irene patinando', 'Laura pinchándose con los erizos de la playa', 'Chary dando un mitin', 'Chary dando clase', 
     'Mila, Loren y Chary en el mercadillo', 'Pepe construyendo una maquinita', 'Victoria, Irene y Laura subiendo a la Giralda', 'Charlie y la fábrica de chocolate', 'Cortometraje El Pozo',
-    'Cepillo Party', 'Jugando al party', 'Irene se despierta y tiene un gato en la cama', 'Hacerse una PCR', '']
+    'Cepillo Party', 'Jugando al party', 'Irene se despierta y tiene un gato en la cama', 'Hacerse una PCR', 'Jugar al bingo', 'Comer piquislabis en la playa', 'This is us', 'Matar moscas', 
+    'Te pica un mosquito', 'Atar un hiscalillo', 'Clavar la sombrilla en la arena', 'Jugar con globos de agua', 'Victoria pescando con el tito Juan', 'Hacer ejercicio en casa', 'Nosotros en la nocturna',
+    'Hacer buñuelos', 'Noche de karaoke', 'Mamma mia', 'Luca', 'Los minions', 'Saltar las olas', 'Comer churros en la pepa', 'Hacer croché']
 
 var telepatias = ['Marca de ropa', 'Comida', 'Bebida', 'Bebida alcohólica', 'Marca de zapatos', 'Marca deportiva', 'Marca de comida', 'Sabor de helado', 
     'Sabor de té', 'Bebida sin azúcar', 'Deporte', 'Deporte acuático', 'Deporte con pelota', 'Juego de mesa', 'Videojuego', 'Asignatura del cole', 'Marca de tecnología', 
@@ -34,7 +36,7 @@ var dibujos = ['Vaca', 'Caballo', 'Delfín', 'Voldemort', 'Teclado', 'Ratón', '
     'Sweet California', 'Váter', 'Ducha', 'Lavabo', 'Coronavirus', 'Nevera', 'Sofá', 'Silla de escritorio', 'Flexo', 'Collar luna', 'Irene de fisio rehabilitando', 'Chary recibiendo punción seca',
     'Victoria marcando un gol']
 
-var imitar = ['Acento: argentino', 'Acento: cubano', 'Acento: vasco', 'Acento: andaluz', 'Acento: mexicano', 'Acento: gallego', 'Acento: portugués', 'Acento: catalán', 'Acento: un reggetonero, mi amol', 
+var imitar = ['Acento: argentino', 'Imitación: minion', 'Acento: cubano', 'Imitación: animal crossing', 'Acento: vasco', 'Acento: andaluz', 'Acento: mexicano', 'Acento: gallego', 'Acento: portugués', 'Acento: catalán', 'Acento: un reggetonero, mi amol', 
     'Imitación: Sebastián Yatra', 'Acento: un chino hablando español', 'Acento: un inglés hablando español', 'Acento: un francés hablando español', 'Imitación: Gloria Serra', 'Imitación: tito Paco', 'imitación: tito Juan',
     'Imitación:Manuel Carrasco', 'Imitación: Rajoy', 'Imitación: Juan Carlos I ', 'Acento: venezolano', 'Acento: cordobés', 'Acento: madrileño', 'Acento: un ruso hablando español', 'Imitación: Shakira', 'Imitación: Amaia Montero',
     'Imitación: Dani Martín', 'Imitación: Voldemort','Imitación: Pikachu', 'Acento: italiano', 'Imitación: Mickey Mouse', 'Imitación: Shin Chan', 'Imitación: Miguel Bosé', 'Imitación: Homer', 'Imitación: Matías Pratts',
