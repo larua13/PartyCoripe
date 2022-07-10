@@ -2,6 +2,9 @@
 * @sweetalert2/themes v5.0.8
 * Released under the MIT License.
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap');
+
 *{
     font-family:'Algerian';
 
@@ -236,7 +239,7 @@
     grid-row: 2;
     align-self: center;
     justify-self: end;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   .swal2-container.swal2-bottom-start > .swal2-popup, .swal2-container.swal2-bottom-left > .swal2-popup {
     grid-column: 1;
@@ -278,11 +281,11 @@
     box-shadow: 3px 2px 4px  #000000;
     border: none;
     border-radius: 5px;
-    background: url(./files/back.jpg);
+    background: url(./files/929.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     color: black;
-    font-family: inherit;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 1rem;
   }
   .swal2-popup:focus {
@@ -297,7 +300,8 @@
     max-width: 100%;
     margin: 0;
     padding: 0.8em 1em 0;
-    color: #000000;
+    color: #000;
+    font-family:'Vesper Libre', serif;
     font-size: 2em;
     font-weight: 600;
     text-align: center;
@@ -1443,10 +1447,11 @@
     border: 2px black;
     border-radius: 0.25em;
     background: initial;
-    background-color: #ff5100;
+    background-color: #eb5353;
     color: white;
+    font-family: 'Vesper Libre', serif;
     font-size: 1em;
-    box-shadow: 0px 0px 5px 3px rgba(243, 119, 4, 0.5);
+    box-shadow: 0px 0px 5px 3px rgba(255, 5, 5, 0.797);
     font-size: large;
     padding: 5px;
   
@@ -1454,7 +1459,8 @@
 
   .start:hover {
     background-color: #000000;
-    color: #ff5100; 
+    color: #f35a52; 
+    box-shadow: 0px 0px 5px 3px rgba(255, 5, 5, 0.797);
   }
 
   .flex{
