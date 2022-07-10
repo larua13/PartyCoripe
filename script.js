@@ -8,7 +8,7 @@ var mimicas = ['Spiderman', 'Piratas del Caribe', 'Harry Potter', 'La casa de Pa
     'Los Sanfermines', 'Montar en bici', 'Tirarse de bomba a la piscina', 'Bailar un chotis', 'Ayuso en el balcón', 'Jugar a las palas en la playa', 'Chary y Mila comprando sandías', 
     'Victoria, Irene y Laura jugando al FIFA', 'La gymkhaja de los Reyes 2021', 'Irene patinando', 'Laura pinchándose con los erizos de la playa', 'Chary dando un mitin', 'Chary dando clase', 
     'Mila, Loren y Chary en el mercadillo', 'Pepe construyendo una maquinita', 'Victoria, Irene y Laura subiendo a la Giralda', 'Charlie y la fábrica de chocolate', 'Cortometraje El Pozo',
-    'Cepillo Party', 'Jugando al party', 'Irene se despierta y tiene un gato en la cama']
+    'Cepillo Party', 'Jugando al party', 'Irene se despierta y tiene un gato en la cama', 'Hacerse una PCR', '']
 
 var telepatias = ['Marca de ropa', 'Comida', 'Bebida', 'Bebida alcohólica', 'Marca de zapatos', 'Marca deportiva', 'Marca de comida', 'Sabor de helado', 
     'Sabor de té', 'Bebida sin azúcar', 'Deporte', 'Deporte acuático', 'Deporte con pelota', 'Juego de mesa', 'Videojuego', 'Asignatura del cole', 'Marca de tecnología', 
@@ -102,7 +102,6 @@ var spoty = ['"https://open.spotify.com/embed/track/42VgiRyg0YjtRVLiPFNxPJ?utm_s
     '"https://open.spotify.com/embed/track/1Je1IMUlBXcx1Fz0WE7oPT?utm_source=generator"', //wannabe
     '"https://open.spotify.com/embed/track/2fuCquhmrzHpu5xcA1ci9x?utm_source=generator"', //underpressure
     '"https://open.spotify.com/embed/track/4ppxWzgjvst4Mv1Kpwooeh?utm_source=generator"', //arrebato
-    '"https://open.spotify.com/embed/track/3zb856RMKFjdvWre0TKcmA?utm_source=generator"', //una vaina loca
     '"https://open.spotify.com/embed/track/5RZTA3NhiHR2408da3HMNz?utm_source=generator"', //pasado pisado
     '"https://open.spotify.com/embed/track/228BxWXUYQPJrJYHDLOHkj?utm_source=generator"', //gasolina
     '"https://open.spotify.com/embed/track/4QkQmdvFjEVvjc1ONi6t6N?utm_source=generator"', //bailar pegados
