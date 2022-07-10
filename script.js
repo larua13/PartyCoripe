@@ -134,8 +134,8 @@ var mimicaHecha = [];
 var telepatiaHecha = []; 
 var dibujarHecho = []; 
 var imitaHecho = [];
-var sergio = "files/sergio.wav";
-var sergio90 = "files/sergio90.wav";
+var sergio = "files/30.wav";
+var sergio90 = "files/90.wav";
 
 function mimica(){
 
