@@ -380,7 +380,7 @@ function ventana2(categoria, i, cancion){
         '<button id = "salir" class = "salir"><i class = "material-icons">stop</i></button></div>',
         showCancelButton: false, 
         showConfirmButton: false,
-        timer: 30000,
+        timer: 31000,
         allowOutsideClick: false,
 
         
@@ -432,7 +432,7 @@ function ventana2(categoria, i, cancion){
         '<button id = "salir" class = "salir"><i class = "material-icons">stop</i></button></div>',
         showCancelButton: false, 
         showConfirmButton: false,
-        timer: 90000,
+        timer: 91000,
         allowOutsideClick: false,
 
     didOpen: () => {
