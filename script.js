@@ -10,7 +10,8 @@ var mimicas = ['Spiderman', 'Piratas del Caribe', 'Harry Potter', 'La casa de Pa
     'Mila, Loren y Chary en el mercadillo', 'Pepe construyendo una maquinita', 'Victoria, Irene y Laura subiendo a la Giralda', 'Charlie y la fábrica de chocolate', 'Cortometraje El Pozo',
     'Cepillo Party', 'Jugando al party', 'Irene se despierta y tiene un gato en la cama', 'Hacerse una PCR', 'Jugar al bingo', 'Comer piquislabis en la playa', 'This is us', 'Matar moscas', 
     'Te pica un mosquito', 'Atar un hiscalillo', 'Clavar la sombrilla en la arena', 'Jugar con globos de agua', 'Victoria pescando con el tito Juan', 'Hacer ejercicio en casa', 'Nosotros en la nocturna',
-    'Hacer buñuelos', 'Noche de karaoke', 'Mamma mia', 'Luca', 'Los minions', 'Saltar las olas', 'Comer churros en la pepa', 'Hacer croché']
+    'Hacer buñuelos', 'Noche de karaoke', 'Mamma mia', 'Luca', 'Los minions', 'Saltar las olas', 'Comer churros en la pepa', 'Hacer croché', 'Nosotros haciendo la nocturna', 'Carmina o Revienta',
+    'Jugar al basketwater en Barbate', 'Perder el bikini en la playa', 'Hacer snorkel', 'Oliver y Benji', 'Ir al Guadalpark', 'Tomar el fresco', 'Nadar a mariposa', 'Nadar a braza']
 
 var telepatias = ['Marca de ropa', 'Comida', 'Bebida', 'Bebida alcohólica', 'Marca de zapatos', 'Marca deportiva', 'Marca de comida', 'Sabor de helado', 
     'Sabor de té', 'Bebida sin azúcar', 'Deporte', 'Deporte acuático', 'Deporte con pelota', 'Juego de mesa', 'Videojuego', 'Asignatura del cole', 'Marca de tecnología', 
@@ -23,7 +24,7 @@ var telepatias = ['Marca de ropa', 'Comida', 'Bebida', 'Bebida alcohólica', 'Ma
     'Electrodoméstico', 'Árbol', 'Insecto', 'Mamífero', 'Ave', 'Reptil', 'Anfibio', 'Plato italiano', 'Plato chino', 'Plato francés', 'Destino nuestro de vacaciones', 'Un contenedor',
     'Piedra, papel, tijera', 'Un familiar', 'Un primo', 'Una prima', 'Un tito', 'Una tita', 'Un pueblo de Mallorca', 'Un color del parchís', 'Un juego de cartas', 'Un palo de la baraja',
     'Una canción de Casa Piscinita', 'Un juego de la switch', 'Una videoconsola', 'Un sabor de aceitunas', 'Un partido político', 'Un político', 'Una verdura del huerto del Paco', 'Un embutido', 
-    'Un parque de atracciones', 'Una amiga de Victoria']
+    'Un parque de atracciones', 'Una amiga de Victoria', 'Un jugador del Sevilla', 'Un jugador del Madrid', 'Un pueblo de Cádiz', 'Un pueblo de Sevilla', 'Un sabor de helado']
 
 var dibujos = ['Vaca', 'Caballo', 'Delfín', 'Voldemort', 'Teclado', 'Ratón', 'Pulpo', 'Oveja', 'Mapa', 'Regadera', 'Brújula', 'Mariposa', 'Caramelo', 'Monopatín', 'Patín eléctrico',
     'Bicicleta', 'Pollo asao', 'Kayak', 'Paddle Surf', 'Mariquita', 'Matamoscas', 'Lavavajillas', 'Lavadora', 'Secadora', 'Sartén', 'Overcooked', 'La Plaza España', 'La Giralda', 
@@ -34,7 +35,8 @@ var dibujos = ['Vaca', 'Caballo', 'Delfín', 'Voldemort', 'Teclado', 'Ratón', '
     'Chicharrón', 'Chicharrones', 'La piscina de Coripe', 'El huerto del Domingo de Resurreción', 'La casa de allá atrás', 'El limonero', 'Chary y Mila tomando el sol', 'Loren dormido en la playa',
     'Crucigrama', 'Pasapalabra', 'Snorkel', 'Juego Virus', 'Rotonda de la Tita Mari', 'Conejo', 'Cabra', 'Toro', 'Gato', 'Perro', 'Bobi', 'Gazpacho', 'Couscous', 'Mejillones rellenos', 'Abuela', 'Abuelo', 'Gallina',
     'Sweet California', 'Váter', 'Ducha', 'Lavabo', 'Coronavirus', 'Nevera', 'Sofá', 'Silla de escritorio', 'Flexo', 'Collar luna', 'Irene de fisio rehabilitando', 'Chary recibiendo punción seca',
-    'Victoria marcando un gol']
+    'Victoria marcando un gol', 'La nocturna de Coripe', 'El chalet de Barbate', 'Mosquito', 'El escudo del Sevilla', 'El escudo del Madrid', 'El escudo del Cádiz', 'Tirarse de bomba', 'Arcoíris (unicornio de Victoria)',
+    'La Warner', 'Una chancla', 'Un cangrejo', 'Cine', 'El limonero de la abuela', 'La plaza de Coripe', 'Parchís', 'Ajedrez']
 
 var imitar = ['Acento: argentino', 'Imitación: minion', 'Acento: cubano', 'Imitación: animal crossing', 'Acento: vasco', 'Acento: andaluz', 'Acento: mexicano', 'Acento: gallego', 'Acento: portugués', 'Acento: catalán', 'Acento: un reggetonero, mi amol', 
     'Imitación: Sebastián Yatra', 'Acento: un chino hablando español', 'Acento: un inglés hablando español', 'Acento: un francés hablando español', 'Imitación: Gloria Serra', 'Imitación: tito Paco', 'imitación: tito Juan',
@@ -42,7 +44,7 @@ var imitar = ['Acento: argentino', 'Imitación: minion', 'Acento: cubano', 'Imit
     'Imitación: Dani Martín', 'Imitación: Voldemort','Imitación: Pikachu', 'Acento: italiano', 'Imitación: Mickey Mouse', 'Imitación: Shin Chan', 'Imitación: Miguel Bosé', 'Imitación: Homer', 'Imitación: Matías Pratts',
     'Imitación: Belén Esteban', 'Imitación: Raphael', 'Imitación: Yoda', 'Acento: un turco hablando español', 'Imitación: Michael Jackson', 'Imitación: Camilo', 'Imitación: Duquesa de Alba', 'Imitación: Mario Vaquerizo', 
     'Imitación: Boris Izaguirre', 'Imitación: Jack Sparrow', 'Imitación: Rafa Nadal', 'Imitación: Ed Sheeran', 'Imitación: Pedro Sánchez', 'Imitación: Vanesa Martín', 'Imitación: Malú', 'Imitación: Pablo Alborán', 'Imitación: Pablo López'
-    ,'Imitación: Sweet California', 'Imitación: la Rosalía', 'Imitación: Sergio Dalma' , 'Imitación: David Bisbal', 'Imitación: David Bustamante', 'Imitación: Fernando Simón', 'Imitación: Ayuso', 'Imitación: Dark Vather', 'Acento: gitano', 'Imitación: C Tangana', 'Imitación: 5SOS']
+    ,'Imitación: Sweet California', 'Imitación: la Rosalía', 'Imitación: Sergio Dalma' , 'Imitación: David Bisbal', 'Imitación: David Bustamante', 'Imitación: Fernando Simón', 'Imitación: Ayuso', 'Imitación: Dark Vather', 'Acento: gitano', 'Imitación: C Tangana']
 
 var canciones = ['Zapatillas, El canto del loco', 'Nada que perder, Pignoise', 'Cuando zarpa el amor, Camela', 'Como Camarón, Estopa', 'Por la raja de tu falda, Estopa', 
     'Caminando por la vida, Melendi', 'Tacones Rojos, Sebastián Yatra',  'Perfect, Ed Sheeran', 'Shape of you, Ed Sheeran', 'Física o química, Despistaos', 
